@@ -1,0 +1,1 @@
+* Don't let a problem takes more than 2-3 hours. If can't solve it, see editorials/solutions. If still can't solve it, just leave it for now.
