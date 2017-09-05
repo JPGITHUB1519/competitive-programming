@@ -1,0 +1,3 @@
+g++ myfile.cpp -o myfile && ./myfile
+
+https://stackoverflow.com/questions/20004924/compiling-and-running-c-code-with-one-command-in-linux
