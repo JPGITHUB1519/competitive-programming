@@ -2,18 +2,21 @@
 
 using namespace std;
 
-int main()
-{
-    int n,anton = 0, danik = 0;
+int main() {
+    int cont_anton = 0;
+    int cont_danik = 0;
+    int n_games;
     string s;
-    cin >> n >> s;
-    for(int i = 0; i < n; i++)
-    {
-        if(s[i] == 'A') anton = anton + 1;
-        if(s[i] == 'D') danik = danik + 1;
+    cin >> n_games;
+    cin >> s;
+    for (int i = 0; i < n_games; i++) {
+        if (s[i] == 'A') cont_anton++;
+        else cont_danik++;
     }
-    if(anton == danik) cout << "Friendship" << endl;
-    else if (anton > danik) cout << "Anton" << endl;
-    else cout << "Danik" << endl;
+
+    if (cont_anton > cont_danik) cout << "Anton" << endl;
+    else if(cont_danik > cont_anton) cout << "Danik" << endl;
+    else cout << "Friendship" << endl;
+    
     return 0;
 }

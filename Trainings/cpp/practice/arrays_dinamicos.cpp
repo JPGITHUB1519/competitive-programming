@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
 	// debo crear un puntero apuntando a null
+	// espacio de memoria la cual hara referencia al nuevo que crearemos
 	string *titulos = NULL;
 	string entrada;
 	int tamanio;
@@ -23,5 +24,10 @@ int main() {
 	for (int i = 0; i < tamanio; i++) {
 		cout << titulos[i] << endl;
 	}
+
+	// liberando memoria importante! OJOOOOOOOOO
+	delete [] titulos;
+	titulos = NULL;
+
 	return 0;
 }
