@@ -2,20 +2,17 @@
 
 using namespace std;
 
-int main()
-{
-    int n, petya = 0, vasha = 0, tonya = 0;
-    int cant_sure = 0, cant_subs = 0;
+int main() {
+    int p, v, t, resp = 0, n;
     cin >> n;
-    for(int i = 0; i < n; i++)
-    {
-        cin >> petya >> vasha >> tonya;
-        if(petya == 1) cant_sure++;
-        if(vasha == 1) cant_sure++;
-        if(tonya == 1) cant_sure ++;
-        if(cant_sure >= 2) cant_subs++;
-        cant_sure = 0;
+
+    for (int i = 0; i < n; i++) {
+        cin >> p >> v >> t;
+        if ((p + v + t) >= 2) {
+            resp++;
+        }
     }
-    cout << cant_subs << endl;
-    return 0;
+
+    cout << resp << endl;
+
 }
